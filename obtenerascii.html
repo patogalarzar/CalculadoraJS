@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Obtener el codigo ASCII de la tecla pulsada</small></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script type="text/javascript">
+		function info (elEvento) { 
+			evento = elEvento || window.event;
+			k = evento.keyCode; //número de código de la tecla.
+			alert(k)
+		}
+		window.onload = function() {
+		document.onkeydown = info;
+		}
+	</script>
+</head>
+<body>
+	<div class="page-header">
+		<h1>ASCII <small>obtener el codigo de la tecla pulsada</small></h1>
+	</div>
+</body>
+</html>
